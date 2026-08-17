@@ -58,6 +58,9 @@ Ask **one question at a time**. Do not repeat information already verified or an
 3. Ask whether imagery is wanted.
    - If yes, ask whether existing assets are available.
    - If no assets are available, ask whether the visual should be icon only, icon plus one short line, or icon plus project name and one short line.
+   - If the user chooses an OpenAI image service, ask for the API URL and API key (or the names of environment variables that already contain them) before generating anything. Do not guess an endpoint, model, response format, or output location.
+   - Use [`scripts/generate-image.py`](./scripts/generate-image.py) for the generation request. Pass credentials through environment variables or process arguments only; never write them to the repository, README, prompt, image URL, or command committed to Git.
+   - Verify the generated local asset before adding its path to a README. If generation fails, show the provider-neutral prompt and report the failure rather than inventing an image reference.
 4. Ask whether to add a Star History chart.
    - Include it only after user confirmation **and** only when a public GitHub `owner/repo` identifier can be verified from the remote URL or supplied by the user.
    - Place it after **Community & support** and immediately before **License**.

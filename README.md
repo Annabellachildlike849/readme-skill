@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/readme-skill-hero.svg" alt="readme-skill: Evidence before prose">
+  <img src="./assets/readme-skill-hero.png" alt="readme-skill: Evidence before prose">
 </p>
 
 # readme-skill
@@ -31,11 +31,14 @@ The skill uses a bounded documentation workflow:
 5. Write README files only after the target files and changes are confirmed.
 6. Run the quality checklist against the resulting files.
 
+When a user chooses an OpenAI image service, the skill requests the API URL and key and uses [`scripts/generate-image.py`](./scripts/generate-image.py) to create and verify a local asset without publishing credentials.
+
 ## Repository structure
 
 | Path | Purpose |
 |---|---|
 | [`SKILL.md`](./SKILL.md) | Skill definition, workflow, and documentation rules |
+| [`scripts/generate-image.py`](./scripts/generate-image.py) | Generates local images through an OpenAI-compatible Images API |
 | [`references/readme-structure.md`](./references/readme-structure.md) | README information architecture and section guidance |
 | [`references/quality-checklist.md`](./references/quality-checklist.md) | Pre-draft and pre-write quality checks |
 | [`references/badge-style.md`](./references/badge-style.md) | Evidence requirements and style guidance for badges |

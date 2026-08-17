@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/readme-skill-hero.svg" alt="readme-skill：先验证事实，再组织文字">
+  <img src="./assets/readme-skill-hero.png" alt="readme-skill：先验证事实，再组织文字">
 </p>
 
 # readme-skill
@@ -31,11 +31,14 @@
 5. 只有在目标文件和变更内容确认后，才写入 README。
 6. 针对生成后的文件执行质量检查清单。
 
+当用户选择 OpenAI 生图服务时，该 skill 会先索取 API URL 和密钥，再通过 [`scripts/generate-image.py`](./scripts/generate-image.py) 生成并验证本地图片，同时避免公开凭据。
+
 ## 仓库结构
 
 | 路径 | 用途 |
 |---|---|
 | [`SKILL.md`](./SKILL.md) | Skill 定义、工作流程和文档规则 |
+| [`scripts/generate-image.py`](./scripts/generate-image.py) | 通过 OpenAI 兼容的 Images API 生成本地图片 |
 | [`references/readme-structure.md`](./references/readme-structure.md) | README 信息架构和章节指南 |
 | [`references/quality-checklist.md`](./references/quality-checklist.md) | 写作前和写入前的质量检查 |
 | [`references/badge-style.md`](./references/badge-style.md) | 徽章的证据要求和样式指南 |

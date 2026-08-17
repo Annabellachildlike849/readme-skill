@@ -37,61 +37,27 @@ Text: [none, or exact short text under 12 words]. No dense UI, feature lists, pa
 
 Image-model typography can be inaccurate. An icon-only image with a Markdown title is the most reliable option. If text is desired, use only confirmed wording and warn the user that they may need to replace rendered text in a design tool.
 
-## OpenAI Images API
+## OpenAI-compatible image service
 
-Use this route only when the user chooses it and has access. Do not run it automatically. Keep credentials in the user’s shell environment; never copy the key into a README or repository file.
+Use this route only after the user explicitly chooses an OpenAI image service and provides an API URL and API key, or identifies environment variables that contain them. Do not guess a provider endpoint, model, response format, output format, or pricing. Never place the credential in a repository file, README, prompt, image URL, shell history, or commit.
 
-### curl
+The repository includes [`scripts/generate-image.py`](../scripts/generate-image.py). It uses Python's standard library and supports an OpenAI-compatible Images Generations endpoint. The script accepts either a complete endpoint or a base URL and adds `/v1/images/generations` when needed. It reads image data from either `data[0].b64_json` or `data[0].url`.
+
+Pass credentials through environment variables:
 
 ```bash
-export OPENAI_API_KEY='replace-with-your-key'
+export IMAGE_API_URL='https://example.invalid/v1/images/generations'
+export IMAGE_API_KEY='replace-with-your-key'
 
-curl https://api.openai.com/v1/images/generations \
-  -H "Authorization: Bearer $OPENAI_API_KEY" \
-  -H 'Content-Type: application/json' \
-  -d '{
-    "model": "gpt-image-1",
-    "prompt": "Create a clean GitHub README visual for a developer CLI. Visual metaphor: a precise compass. Style: minimal, technical, calm. Palette: midnight blue, cyan, white. Composition: wide banner. Text: none. No dense UI, feature lists, paragraphs, logos of unrelated brands, or watermarks.",
-    "size": "1536x1024"
-  }'
+python3 scripts/generate-image.py \
+  --model gpt-image-2 \
+  --prompt 'Create a clean GitHub README visual for a documentation skill. Visual metaphor: verified facts becoming a clear document. Style: minimal, technical, calm. Palette: midnight blue, cyan, white. Composition: wide hero banner. Text: readme-skill; Evidence before prose. No dense UI, feature lists, unrelated logos, or watermarks.' \
+  --size 1536x1024 \
+  --output assets/readme-skill-hero.png
 ```
 
-### Python
+The script also accepts `OPENAI_API_KEY`, `OPENAI_BASE_URL`, and `IMAGE_MODEL` as alternatives. Inspect `python3 scripts/generate-image.py --help` for all options. Verify the resulting local file before adding it to a README. If the request fails or the provider uses a different API contract, report the error and use the provider-neutral prompt instead of inventing a compatible response.
 
-```python
-import os
-from openai import OpenAI
+## If OpenAI image access is unavailable
 
-client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
-response = client.images.generate(
-    model="gpt-image-1",
-    prompt=(
-        "Create a clean GitHub README visual for a developer CLI. "
-        "Visual metaphor: a precise compass. Style: minimal, technical, calm. "
-        "Palette: midnight blue, cyan, white. Composition: wide banner. "
-        "Text: none. No dense UI, feature lists, paragraphs, logos of unrelated brands, or watermarks."
-    ),
-    size="1536x1024",
-)
-print(response)
-```
-
-### Node.js
-
-```js
-import OpenAI from "openai";
-
-const client = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
-const response = await client.images.generate({
-  model: "gpt-image-1",
-  prompt: "Create a clean GitHub README visual for a developer CLI. Visual metaphor: a precise compass. Style: minimal, technical, calm. Palette: midnight blue, cyan, white. Composition: wide banner. Text: none. No dense UI, feature lists, paragraphs, logos of unrelated brands, or watermarks.",
-  size: "1536x1024",
-});
-console.log(response);
-```
-
-SDK response formats and image-saving code may vary by installed SDK version. Verify those details against the SDK documentation installed in the user’s environment before adding image-save logic to a project.
-
-## If OpenAI API access is unavailable
-
-Offer the provider-neutral concise prompt first. Ask which image tool or provider the user already uses. Do not assume an account, API key, model, endpoint, output format, or pricing. Provide provider-specific commands only after the user names the provider or explicitly asks for an alternative.
+Offer the provider-neutral concise prompt first. Ask which image tool or provider the user already uses. Do not assume an account, API key, endpoint, output format, or pricing. Provide provider-specific commands only after the user names the provider or explicitly asks for an alternative.
