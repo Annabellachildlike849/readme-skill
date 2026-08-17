@@ -1,4 +1,4 @@
-<!-- Use only sections supported by repository facts or user confirmation. Delete this instruction and every unsupported section before presenting a draft. Do not leave placeholder tokens in the final README. -->
+<!-- Use only sections supported by repository facts or user confirmation. Delete this instruction and every unsupported optional section before presenting a draft. Quick Start is required: if no verified first-use path is available, ask the user rather than deleting, leaving empty, or inventing the section. Do not leave placeholder tokens in the final README. -->
 
 <!-- Optional header visual. Use only a verified local asset. Keep meaningful alt text. -->
 <!--
@@ -32,7 +32,7 @@
 
 ## Quick Start
 
-<!-- Show the shortest verified path from installation to a useful result. -->
+<!-- Quick Start is mandatory. Show the shortest verified path from availability or installation to a useful result. Ask for missing evidence instead of deleting this section. -->
 
 ```text
 <verified command or code example>
@@ -80,3 +80,5 @@
 ## License
 
 <!-- Name and link only the verified license file. -->
+
+<!-- Example: This project is licensed under the [MIT License](./LICENSE). -->

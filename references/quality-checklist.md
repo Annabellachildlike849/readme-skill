@@ -7,7 +7,9 @@ Use this checklist before showing a final draft and again before any file write.
 - [ ] Project name, short description, installation command, runtime requirements, API/CLI syntax, configuration keys, paths, and license terms are verified from the repository or confirmed by the user.
 - [ ] Uncertain claims are explicitly marked for confirmation or omitted.
 - [ ] Quick Install uses an actual supported package manager, installer, or source-build route.
+- [ ] Quick Start is present and non-empty in every README.
 - [ ] Quick Start uses real entry points, flags, imports, environment variables, and expected behavior.
+- [ ] If no verified first-use path exists, the draft is blocked pending user confirmation rather than omitting or inventing Quick Start.
 - [ ] Code fences have the appropriate language label.
 - [ ] README URLs, local document links, image paths, package references, and community links exist or are user-confirmed.
 - [ ] API keys are represented only by environment variable names; no secret is embedded in text, code, URL, or asset.
@@ -29,6 +31,7 @@ Use this checklist before showing a final draft and again before any file write.
 - [ ] HTML is limited to GitHub-compatible structural elements; no JavaScript, CSS, or `iframe` is used.
 - [ ] The README links to detailed docs rather than repeating a complete manual.
 - [ ] In bilingual mode, language-switch links are reciprocal and correct.
+- [ ] In bilingual mode, both files contain corresponding Quick Start sections and their technical identifiers match.
 - [ ] Commands, URLs, paths, versions, and license identifiers match across `README.md` and `README.zh-CN.md`.
 
 ## Existing README and write gate
@@ -53,6 +56,7 @@ If any checkbox fails, keep the output as an in-conversation draft and state wha
 | Directory is not a Git repository or remote is unavailable | State the reduced verification scope; continue from local files and user input. |
 | Conflicting manifests or configurations | Identify the conflicting files and ask which public behavior to document. |
 | Absent license | Omit the license section and badge; invite the user to choose or add one. |
+| No verified Quick Start | Ask for the missing first-use path; do not finalize a README without a Quick Start section. |
 | No verified docs, community, or demo | Omit the corresponding section and badge instead of creating a placeholder. |
 | Code-versus-README contradiction | Show the conflict, treat code/configuration as the stronger source, and ask before making an external claim. |
 | Image unavailable or path unknown | Give placement guidance only; do not add an image reference. |

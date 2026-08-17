@@ -14,6 +14,7 @@ Create an accurate, readable GitHub README by grounding every external claim in 
 - If the user wants a saved draft, use the exact target path they provide; otherwise ask for one. Do not invent a draft filename.
 - Never invent commands, APIs, links, badges, performance claims, compatibility promises, release data, community locations, license terms, or repository ownership.
 - Never expose API keys in README content, commands committed to a repository, source files, or image URLs. Examples may reference environment variables only.
+- Every README draft must include a **Quick Start** section that shows the shortest verified path from availability or installation to a useful result. If that path cannot be verified from repository evidence or user confirmation, ask for the missing first-use details; do not invent, leave empty, or omit the section.
 - Keep a clear separation between **Verified from repository**, **Confirmed by user**, **Uncertain**, and **Missing** information.
 - Do not copy another repository's wording, project-specific commands, branding, or content. Use only general information architecture and writing principles.
 
@@ -69,7 +70,7 @@ Ask **one question at a time**. Do not repeat information already verified or an
 
 ### 4. Compose the draft
 
-Use the relevant structure and template, then remove every inapplicable section. Prefer short, evidence-led prose and a useful first-run experience over exhaustive feature lists.
+Use the relevant structure and template, then remove every inapplicable section **except Quick Start**. A Quick Start must remain in every draft and use the shortest verified first-use path; if no such path exists, ask the user for it before presenting a final draft. Prefer short, evidence-led prose and a useful first-run experience over exhaustive feature lists.
 
 Before any file write, present:
 

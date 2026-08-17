@@ -18,7 +18,18 @@ A Claude Code skill for creating accurate, readable GitHub README files from rep
 | Evidence-led writing | Separates verified facts, user-confirmed details, uncertain claims, and missing information. |
 | Bilingual README support | Provides English, Simplified Chinese, and bilingual README layouts. |
 | Conservative publication rules | Avoids unsupported commands, links, compatibility claims, release details, and license statements. |
+| Required verified Quick Start | Keeps a short, evidence-backed path to a first useful result in every generated README. |
 | Quality checklist | Validates factual accuracy, executable examples, links, badges, images, and bilingual consistency before writing. |
+
+## Quick Start
+
+With `readme-skill` available in Claude Code, ask it to draft a README for the current repository:
+
+```text
+Create bilingual README drafts for this repository. Ground public claims in repository evidence. Do not write files until I confirm the target paths and changes.
+```
+
+The skill returns drafts and a fact ledger in the conversation. It writes `README.md` and `README.zh-CN.md` only after explicit confirmation.
 
 ## Workflow
 
@@ -27,7 +38,7 @@ The skill uses a bounded documentation workflow:
 1. Discover repository facts and available documentation.
 2. Read only the applicable README guidance, templates, and quality checks.
 3. Ask about language layout and optional public elements that cannot be verified locally.
-4. Compose a complete draft with a fact ledger and explicit handling of existing README content.
+4. Compose a complete draft with a fact ledger, a verified Quick Start, and explicit handling of existing README content.
 5. Write README files only after the target files and changes are confirmed.
 6. Run the quality checklist against the resulting files.
 
@@ -51,6 +62,7 @@ When a user chooses an OpenAI image service, the skill requests the API URL and 
 
 - **Evidence before prose:** document only what repository files or the user support.
 - **Useful before exhaustive:** help readers understand the project and reach a first useful result quickly.
+- **Verified Quick Start:** every generated README keeps a verified path to a first useful result; missing evidence prompts a question instead of an invented or omitted section.
 - **Explicit uncertainty:** omit or request confirmation for claims that cannot be verified.
 - **Safe publication:** never place API keys or other secrets in README content.
 - **Consistent bilingual docs:** keep commands, paths, URLs, versions, and other technical identifiers aligned across language files.
@@ -61,4 +73,4 @@ Start with [`SKILL.md`](./SKILL.md) for the complete workflow. Supporting guidan
 
 ## License
 
-No license file was found in the repository.
+This project is licensed under the [MIT License](./LICENSE).

@@ -1,6 +1,6 @@
 # README Structure and Writing Guide
 
-Use this guide before choosing README sections or writing prose. It defines a flexible reading flow, not a mandatory checklist. Delete every section that is unsupported by repository facts or user confirmation.
+Use this guide before choosing README sections or writing prose. It defines a flexible reading flow, not a mandatory checklist, **except that every README must include a verified Quick Start section**. Delete other sections that are unsupported by repository facts or user confirmation. If no verified first-use path is available, ask the user for it rather than omitting Quick Start.
 
 ## Reading flow
 
@@ -55,7 +55,7 @@ Provide the lowest-friction **verified** installation route. Use a copyable comm
 
 ### Quick Start
 
-Show the shortest verified path from installation to a useful result. Keep code/commands small, label fences correctly, and explain the expected result without inventing output. Link to the full guide rather than embedding every configuration option.
+Show the shortest verified path from availability or installation to a useful result. This section is required in every generated README. Keep code/commands small, label fences correctly, and explain the expected result without inventing output. If the repository and user provide no verifiable first-use path, ask for that information before finalizing the draft; do not delete, leave empty, or replace the section with generic instructions. Link to the full guide rather than embedding every configuration option.
 
 ### Commands, APIs, and deployment
 
@@ -111,7 +111,7 @@ Put a reciprocal language switch near the top of both files:
 [English](./README.md) | [简体中文](./README.zh-CN.md)
 ```
 
-The Chinese version is natural technical writing, not sentence-by-sentence translation. However, commands, code blocks, environment variable names, URLs, file paths, version numbers, and license identifiers must remain factually identical across language versions.
+The Chinese version is natural technical writing, not sentence-by-sentence translation. However, both language files must include corresponding verified Quick Start sections, and commands, code blocks, environment variable names, URLs, file paths, version numbers, and license identifiers must remain factually identical across language versions.
 
 ## GitHub-compatible layout
 
