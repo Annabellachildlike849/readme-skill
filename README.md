@@ -16,6 +16,7 @@ A Claude Code skill for creating accurate, readable GitHub README files from rep
 |---|---|
 | Bounded repository discovery | Reviews project structure, metadata, documentation, and configuration before drafting. |
 | Evidence-led writing | Separates verified facts, user-confirmed details, uncertain claims, and missing information. |
+| Existing README choices | Offers explicit replace, selective-reuse, or extend modes before drafting. |
 | Bilingual README support | Provides English, Simplified Chinese, and bilingual README layouts. |
 | Conservative publication rules | Avoids unsupported commands, links, compatibility claims, release details, and license statements. |
 | Required verified Quick Start | Keeps a short, evidence-backed path to a first useful result in every generated README. |
@@ -35,12 +36,13 @@ The skill returns drafts and a fact ledger in the conversation. It writes `READM
 
 The skill uses a bounded documentation workflow:
 
-1. Discover repository facts and available documentation.
-2. Read only the applicable README guidance, templates, and quality checks.
-3. Ask about language layout and optional public elements that cannot be verified locally.
-4. Compose a complete draft with a fact ledger, a verified Quick Start, and explicit handling of existing README content.
-5. Write README files only after the target files and changes are confirmed.
-6. Run the quality checklist against the resulting files.
+1. Discover repository facts and existing documentation.
+2. If a README already exists, ask whether to replace it completely, replace it while selectively retaining approved information, or extend it in place.
+3. Read only the applicable README guidance, templates, and quality checks.
+4. Ask about language layout and other unverifiable public choices through explicit options where possible.
+5. Compose a complete draft with a fact ledger, a verified Quick Start, and explicit handling of existing README content.
+6. Write README files only after the target files and changes are confirmed.
+7. Run the quality checklist against the resulting files.
 
 When a user chooses an OpenAI image service, the skill requests the API URL and key and uses [`scripts/generate-image.py`](./scripts/generate-image.py) to create and verify a local asset without publishing credentials.
 

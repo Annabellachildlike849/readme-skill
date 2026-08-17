@@ -15,6 +15,10 @@ Put this near the top of both files:
 
 ## Parity rules
 
+- If an existing README is detected, ask the user to choose: replace it completely, replace it while selectively retaining approved information, or extend it in place.
+- Prefer selectable options for every user decision; use free-form input only when anticipated options cannot cover the request.
+- If an existing README is detected, ask the user to choose: replace it completely, replace it while selectively retaining approved information, or extend it in place.
+- Prefer selectable options for every user decision; use free-form input only when anticipated options cannot cover the request.
 - Write the English README first so the GitHub landing page is complete on its own.
 - Rewrite the Chinese version naturally; do not translate sentence by sentence when that harms clarity.
 - Keep commands, code blocks, environment variables, URLs, paths, version numbers, badge destinations, Star History owner/repo identifiers, and license identifiers factually identical.

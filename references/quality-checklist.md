@@ -36,11 +36,19 @@ Use this checklist before showing a final draft and again before any file write.
 
 ## Existing README and write gate
 
-When an existing README is present, produce an explicit list of content to **keep**, **move**, **merge**, and **remove**, with reasons tied to current repository facts.
+When an existing README is present, before drafting ask the user to choose one handling mode:
+
+1. **Replace completely:** ignore all information in the existing README.
+2. **Replace with selected existing information:** create a new README while retaining only accurate content the user approves.
+3. **Extend existing README:** preserve accurate existing content and add or improve it in place.
+
+Then produce an explicit list of content to **keep**, **move**, **merge**, and **remove**, with reasons tied to current repository facts.
 
 Before writing any file, verify all of the following:
 
 - [ ] The user explicitly asked for a write or update.
+- [ ] When a README already existed, the user selected its handling mode before drafting.
+- [ ] Questions with predictable decisions offered explicit selectable options; free-form input was reserved for uncovered cases.
 - [ ] Every target path is named.
 - [ ] The user can see what is being replaced or reorganized.
 - [ ] No image references point to absent assets.
@@ -55,6 +63,7 @@ If any checkbox fails, keep the output as an in-conversation draft and state wha
 |---|---|
 | Directory is not a Git repository or remote is unavailable | State the reduced verification scope; continue from local files and user input. |
 | Conflicting manifests or configurations | Identify the conflicting files and ask which public behavior to document. |
+| Existing README | Ask the user to choose replace completely, replace with selected existing information, or extend existing README before drafting. |
 | Absent license | Omit the license section and badge; invite the user to choose or add one. |
 | No verified Quick Start | Ask for the missing first-use path; do not finalize a README without a Quick Start section. |
 | No verified docs, community, or demo | Omit the corresponding section and badge instead of creating a placeholder. |

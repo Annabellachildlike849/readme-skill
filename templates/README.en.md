@@ -1,3 +1,7 @@
+<!-- If an existing README is detected, ask the user to choose: replace completely, replace while selectively retaining approved information, or extend in place. Prefer explicit selectable options for later questions. -->
+
+<!-- If an existing README is detected, ask the user to choose: replace completely, replace while selectively retaining approved information, or extend in place. Prefer explicit selectable options for later questions. -->
+
 <!-- Use only sections supported by repository facts or user confirmation. Delete this instruction and every unsupported optional section before presenting a draft. Quick Start is required: if no verified first-use path is available, ask the user rather than deleting, leaving empty, or inventing the section. Do not leave placeholder tokens in the final README. -->
 
 <!-- Optional header visual. Use only a verified local asset. Keep meaningful alt text. -->
