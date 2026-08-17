@@ -1,33 +1,34 @@
+<p align="center">
+  <img src="./assets/readme-skill-hero.svg" alt="readme-skill: Evidence before prose">
+</p>
+
 # readme-skill
 
 [English](./README.md) | [简体中文](./README.zh-CN.md)
 
 [![GitHub repository](https://img.shields.io/badge/GitHub-ZardLi1115%2Freadme--skill-181717?style=flat-square)](https://github.com/ZardLi1115/readme-skill)
 
-A Claude Code skill for drafting, improving, restructuring, translating, and auditing fact-based GitHub README files.
+A Claude Code skill for creating accurate, readable GitHub README files from repository evidence and explicit user confirmation.
 
-## What it does
+## Highlights
 
-`readme-skill` helps create readable GitHub README files while grounding public claims in repository evidence or explicit user confirmation.
-
-It is designed to:
-
-- inspect repository files, metadata, documentation, and configuration before writing;
-- separate verified, user-confirmed, uncertain, and missing information;
-- organize README content around project value, installation, first use, and deeper documentation;
-- support English, Simplified Chinese, and bilingual README layouts;
-- evaluate badges, images, and Star History charts conservatively;
-- prevent unsupported commands, links, compatibility claims, release details, and license statements from being published.
+| Capability | Why it matters |
+|---|---|
+| Bounded repository discovery | Reviews project structure, metadata, documentation, and configuration before drafting. |
+| Evidence-led writing | Separates verified facts, user-confirmed details, uncertain claims, and missing information. |
+| Bilingual README support | Provides English, Simplified Chinese, and bilingual README layouts. |
+| Conservative publication rules | Avoids unsupported commands, links, compatibility claims, release details, and license statements. |
+| Quality checklist | Validates factual accuracy, executable examples, links, badges, images, and bilingual consistency before writing. |
 
 ## Workflow
 
-The skill follows a bounded documentation workflow:
+The skill uses a bounded documentation workflow:
 
 1. Discover repository facts and available documentation.
-2. Read only the applicable README structure, badge, image, template, and quality guidance.
-3. Ask the user about language layout and any optional public elements that cannot be verified from the repository.
+2. Read only the applicable README guidance, templates, and quality checks.
+3. Ask about language layout and optional public elements that cannot be verified locally.
 4. Compose a complete draft with a fact ledger and explicit handling of existing README content.
-5. Write README files only after the user explicitly confirms the target files and changes.
+5. Write README files only after the target files and changes are confirmed.
 6. Run the quality checklist against the resulting files.
 
 ## Repository structure
@@ -53,7 +54,7 @@ The skill follows a bounded documentation workflow:
 
 ## Documentation
 
-Start with [`SKILL.md`](./SKILL.md) for the complete workflow and rules. The supporting guidance and templates are available in the [`references/`](./references/) and [`templates/`](./templates/) directories.
+Start with [`SKILL.md`](./SKILL.md) for the complete workflow. Supporting guidance and templates are available in the [`references/`](./references/) and [`templates/`](./templates/) directories.
 
 ## License
 
