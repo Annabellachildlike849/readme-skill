@@ -2,21 +2,33 @@
 
 <!-- Use only sections supported by repository facts or user confirmation. Delete this instruction and every unsupported optional section before presenting a draft. Quick Start is required: if no verified first-use path is available, ask the user rather than deleting, leaving empty, or inventing the section. Do not leave placeholder tokens in the final README. -->
 
-<!-- Optional header visual. Use only a verified local asset. Keep meaningful alt text. -->
+<!-- Centered header: optional visual, title, positioning, language switch, badges. Keep one blank line between blocks. Everything from the first ## heading down is left-aligned. -->
+
+<!-- Optional header visual. Use only a verified local asset. Keep meaningful alt text. Set width when the asset is large. -->
 <!--
 <p align="center">
-  <img src="./assets/<verified-image-path>" alt="<meaningful visual description>">
+  <img src="./assets/<verified-image-path>" width="320" alt="<meaningful visual description>">
 </p>
 -->
 
-# <Project name>
+<h1 align="center"><Project name></h1>
 
 <!-- One factual sentence: what this is, who it serves, and a verified differentiator. -->
+<p align="center"><One-line positioning statement.></p>
 
 <!-- In bilingual mode, retain this switch in both language files. -->
-<!-- [English](./README.md) | [简体中文](./README.zh-CN.md) -->
+<!--
+<p align="center">
+  <a href="./README.md">English</a> | <a href="./README.zh-CN.md">简体中文</a>
+</p>
+-->
 
-<!-- Optional: include only user-approved badges with verified sources. -->
+<!-- Optional: include only user-approved badges with verified sources. Keep them on one line inside one centered paragraph. -->
+<!--
+<p align="center">
+  <a href="<verified destination>"><img src="<verified badge URL>" alt="<factual label>"></a>
+</p>
+-->
 
 ## Highlights
 

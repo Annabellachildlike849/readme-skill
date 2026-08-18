@@ -2,12 +2,18 @@
   <img src="./assets/readme-skill-hero.png" alt="readme-skill：先验证事实，再组织文字">
 </p>
 
-# readme-skill
+<h1 align="center">readme-skill</h1>
 
-[English](./README.md) | [简体中文](./README.zh-CN.md)
+<p align="center">根据仓库证据生成 GitHub README 的 Claude Code skill。</p>
 
-[![GitHub repository](https://img.shields.io/badge/GitHub-ZardLi1115%2Freadme--skill-181717?style=flat-square)](https://github.com/ZardLi1115/readme-skill)
-[![License: MIT](https://img.shields.io/badge/License-MIT-22C55E?style=flat-square)](./LICENSE)
+<p align="center">
+  <a href="./README.md">English</a> | <a href="./README.zh-CN.md">简体中文</a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/ZardLi1115/readme-skill"><img src="https://img.shields.io/badge/GitHub-ZardLi1115%2Freadme--skill-181717?style=flat-square" alt="GitHub 仓库"></a>
+  <a href="./LICENSE"><img src="https://img.shields.io/badge/License-MIT-22C55E?style=flat-square" alt="MIT 许可证"></a>
+</p>
 
 一个用于根据仓库证据和用户明确确认信息，生成准确、易读 GitHub README 的 Claude Code skill。
 

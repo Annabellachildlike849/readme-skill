@@ -7,10 +7,10 @@ Use this guide before choosing sections or composing prose. It defines a flexibl
 Use this order when the corresponding information genuinely exists:
 
 ```text
-optional visual
-→ project name and one-sentence positioning
-→ language links and verified badges
-→ concise value proposition
+centered header: optional visual
+→ centered project name and one-sentence positioning
+→ centered language links and verified badges
+→ left-aligned value proposition
 → 3–6 benefit-led highlights
 → optional ASCII architecture diagram
 → optional usage example
@@ -143,16 +143,42 @@ Put a reciprocal language switch near the top of both files:
 
 The Chinese version is natural technical writing, not sentence-by-sentence translation. Both files must include corresponding verified Quick Start sections. Keep commands, code blocks, environment variable names, URLs, file paths, version numbers, license identifiers, architecture component labels, image paths, and usage-example identifiers factually identical across language versions. Keep the selected inclusion/omission decision and section order aligned for Architecture and Usage Example.
 
-## GitHub-compatible layout
+## Centered header standard
 
-Markdown is the default. Minimal HTML is permitted only when it improves the header and remains readable without special rendering:
+Center the header block by default. It covers only the identity band at the very top: optional visual, project name, one-line positioning, language switch, and badges. Body content starts at the first `##` heading and is always left-aligned.
+
+Emit the blocks in this order, skipping any that lack evidence:
 
 ```html
 <p align="center">
-  <img src="./assets/<verified-image>.png" alt="<meaningful description>">
+  <img src="./assets/<verified-image>.png" width="320" alt="<meaningful description>">
 </p>
 
 <h1 align="center">Project name</h1>
+
+<p align="center">One-line positioning statement.</p>
+
+<p align="center">
+  <a href="./README.md">English</a> | <a href="./README.zh-CN.md">简体中文</a>
+</p>
+
+<p align="center">
+  <a href="<verified destination>"><img src="<verified badge URL>" alt="<factual label>"></a>
+</p>
 ```
 
-Near the header, limited use of centered `<p>`, `<img>`, `<a>`, and `<h1>` is acceptable. Do not use JavaScript, embedded CSS, `iframe`, scripted widgets, or visual-only essential information. Every image needs meaningful alt text, and core explanations must exist in text.
+Rules for the centered header:
+
+- Use `<h1 align="center">` for the title instead of `# Project name` when the header is centered. Do not emit both.
+- Keep each block in its own `<p align="center">`: positioning, language switch, and badges do not share one paragraph.
+- Put every badge on one line inside a single centered paragraph so they render as one row.
+- Leave one blank line between HTML blocks so GitHub does not merge them.
+- A centered image needs an explicit `width` when the source asset is large; a square icon reads well at 200–320px.
+- Inside a centered header, links use `<a href="...">`, not Markdown link syntax.
+- Keep the header short. Anything longer than one positioning line — value proposition, requirements, install notes — belongs in left-aligned body text below.
+- Stop centering after the header. Never center `##` headings, prose, tables, lists, code blocks, or ASCII diagrams; centered code and diagrams lose their alignment.
+- When the user prefers plain Markdown, use `# Project name` with left-aligned positioning, language switch, and badges instead. Offer this as an explicit alternative rather than assuming it.
+
+## GitHub-compatible layout
+
+Markdown is the default for body content; HTML appears only in the centered header described above. Limited use of `<p>`, `<img>`, `<a>`, `<h1>`, and `align="center"` is acceptable there. Do not use JavaScript, embedded CSS, `iframe`, scripted widgets, or visual-only essential information. Every image needs meaningful alt text, and core explanations must exist in text.

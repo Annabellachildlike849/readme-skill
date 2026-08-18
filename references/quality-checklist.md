@@ -35,6 +35,10 @@ Use this checklist before showing a final draft and again before any file write.
 
 ## Presentation and language layout
 
+- [ ] Unless the user chose a plain Markdown header, the identity band is centered: optional visual, `<h1 align="center">` title, and a separate `<p align="center">` for positioning, language switch, and badges.
+- [ ] The centered header uses `<a href="...">` rather than Markdown links, keeps all badges on one line in one paragraph, and separates HTML blocks with a blank line.
+- [ ] Centering stops at the header; no `##` heading, prose, table, list, code block, or ASCII diagram is centered.
+- [ ] A centered header emits either `<h1 align="center">` or `# Title`, never both.
 - [ ] Heading hierarchy is logical; no empty sections remain.
 - [ ] Tables are short and remain understandable on narrow screens.
 - [ ] Each image has meaningful alt text; no key information exists only inside an image.

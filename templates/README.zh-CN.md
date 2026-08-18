@@ -2,20 +2,30 @@
 
 <!-- 仅使用仓库事实或用户确认支持的章节。展示草稿前删除本说明和所有不适用的可选章节。“快速开始”是必需章节：如果没有已验证的首次使用路径，应询问用户，不得删除、留空或臆造该章节。最终 README 不得保留占位内容。 -->
 
-<!-- 可选顶部视觉：仅使用已验证的本地资源，并提供有意义的替代文本。 -->
+<!-- 居中头部：可选视觉、标题、定位语、语言切换、徽章。各块之间保留一个空行。从第一个 ## 标题开始全部左对齐。 -->
+
+<!-- 可选顶部视觉：仅使用已验证的本地资源，并提供有意义的替代文本。资源较大时设置 width。 -->
 <!--
 <p align="center">
-  <img src="./assets/<verified-image-path>" alt="<meaningful visual description>">
+  <img src="./assets/<verified-image-path>" width="320" alt="<meaningful visual description>">
 </p>
 -->
 
-# <项目名称>
+<h1 align="center"><项目名称></h1>
 
 <!-- 用一句可验证的话说明：它是什么、服务于谁或什么场景、以及一个真实差异点。 -->
+<p align="center"><一句话定位说明。></p>
 
-[English](./README.md) | [简体中文](./README.zh-CN.md)
+<p align="center">
+  <a href="./README.md">English</a> | <a href="./README.zh-CN.md">简体中文</a>
+</p>
 
-<!-- 可选：只保留用户批准且来源已验证的徽章。 -->
+<!-- 可选：只保留用户批准且来源已验证的徽章。所有徽章放在同一个居中段落的一行内。 -->
+<!--
+<p align="center">
+  <a href="<verified destination>"><img src="<verified badge URL>" alt="<factual label>"></a>
+</p>
+-->
 
 ## 核心亮点
 

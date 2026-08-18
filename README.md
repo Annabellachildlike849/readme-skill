@@ -2,12 +2,18 @@
   <img src="./assets/readme-skill-hero.png" alt="readme-skill: Evidence before prose">
 </p>
 
-# readme-skill
+<h1 align="center">readme-skill</h1>
 
-[English](./README.md) | [简体中文](./README.zh-CN.md)
+<p align="center">A Claude Code skill that builds GitHub README files from repository evidence.</p>
 
-[![GitHub repository](https://img.shields.io/badge/GitHub-ZardLi1115%2Freadme--skill-181717?style=flat-square)](https://github.com/ZardLi1115/readme-skill)
-[![License: MIT](https://img.shields.io/badge/License-MIT-22C55E?style=flat-square)](./LICENSE)
+<p align="center">
+  <a href="./README.md">English</a> | <a href="./README.zh-CN.md">简体中文</a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/ZardLi1115/readme-skill"><img src="https://img.shields.io/badge/GitHub-ZardLi1115%2Freadme--skill-181717?style=flat-square" alt="GitHub repository"></a>
+  <a href="./LICENSE"><img src="https://img.shields.io/badge/License-MIT-22C55E?style=flat-square" alt="License: MIT"></a>
+</p>
 
 A Claude Code skill for creating accurate, readable GitHub README files from repository evidence and explicit user confirmation.
 

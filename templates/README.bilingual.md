@@ -22,6 +22,7 @@ Put this near the top of both files:
 - Both files must use the same initial section order when the sections apply: Highlights → optional Architecture → optional Usage Example → Quick Install → Quick Start.
 - Make the same inclusion/omission decision for Architecture and Usage Example in both files.
 - Do not use emoji in either language file.
+- Use the same header treatment in both files: if one centers the identity band, so does the other, with the same visual, badge set, and block order.
 - Architecture diagrams must be the same source-backed topology with aligned technical labels and identifiers in fenced `text` blocks. Never use Mermaid in either language file.
 - Usage Examples must use the same confirmed or verified code, commands, URLs, paths, image assets, expected result, and technical identifiers. Natural prose may differ.
 - Keep commands, code blocks, environment variable names, URLs, paths, version numbers, badge destinations, Star History owner/repo identifiers, and license identifiers factually identical.

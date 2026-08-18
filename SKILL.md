@@ -20,6 +20,7 @@ Create accurate, readable GitHub README files by grounding every external claim 
 - Keep a clear separation between **Verified from repository**, **Confirmed by user**, **Uncertain**, and **Missing** information.
 - Do not copy another repository’s wording, project-specific commands, branding, or content. Use only general information architecture and writing principles.
 - Do not use emoji in generated README files. Keep visual guidance limited to verified image assets, badges, and source-backed ASCII diagrams.
+- Center the header identity band by default: optional visual, project name, one-line positioning, language switch, and badges. Use `<h1 align="center">` for the title and a separate `<p align="center">` for each other block. Everything from the first `##` heading down stays left-aligned — never center headings, prose, tables, lists, code blocks, or ASCII diagrams. Follow the centered header standard in [README structure guidance](references/readme-structure.md#centered-header-standard).
 - Include an architecture diagram only when the repository evidence or the user confirms its components, boundaries, and relationships. Architecture diagrams are ASCII Art in a fenced `text` block—**never Mermaid**.
 - Include a usage example only when the user supplies or confirms the example’s prose, image/assets, code or commands, expected result, placement, and language. Do not turn an unverified idea into a public example.
 
@@ -132,19 +133,20 @@ Ask **one question at a time**. Present the decision as a list of explicit optio
 5. Ask whether to include a usage example.
    - Offer **include a supplied example**, **omit it**, or **Other**.
    - If included, collect confirmed example prose, image/assets, code or commands, expected result, preferred placement, and language. Verify local image paths before referencing them and never expose credentials.
-6. Ask whether imagery is wanted.
+6. Use the centered header by default. Ask only when the user requests a different look; offer **centered header with minimal HTML**, **plain left-aligned Markdown header**, or **Other**.
+7. Ask whether imagery is wanted.
    - Offer **no image**, **use an existing asset**, or **generate a new image**.
    - If yes, ask whether existing assets are available.
    - If no assets are available, ask whether the visual should be icon only, icon plus one short line, or icon plus project name and one short line.
    - If the user chooses an OpenAI image service, ask for the API URL and API key (or the names of environment variables that already contain them) before generating anything. Do not guess an endpoint, model, response format, or output location.
    - Use [`scripts/generate-image.py`](./scripts/generate-image.py) for the generation request. Pass credentials through environment variables or process arguments only; never write them to the repository, README, prompt, image URL, or command committed to Git.
    - Verify the generated local asset before adding its path to a README. If generation fails, show the provider-neutral prompt and report the failure rather than inventing an image reference.
-7. Ask whether to add a Star History chart.
+8. Ask whether to add a Star History chart.
    - Offer **include it**, **omit it**, or **Other**.
    - Include it only after user confirmation **and** only when a public GitHub `owner/repo` identifier can be verified from the remote URL or supplied by the user.
    - Place it after **Community & support** and immediately before **License**.
    - State that it embeds a third-party dynamic SVG for a public GitHub repository; omit it if the repository is private, the owner/repo is uncertain, or the user declines.
-8. Ask only for remaining public information that cannot be verified: target audience, key emphasis, documentation site, demo, community, contribution route, FAQ, roadmap, citation, or security policy.
+9. Ask only for remaining public information that cannot be verified: target audience, key emphasis, documentation site, demo, community, contribution route, FAQ, roadmap, citation, or security policy.
 
 ### 4. Compose the draft
 
