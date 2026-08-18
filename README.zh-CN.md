@@ -13,6 +13,7 @@
 <p align="center">
   <a href="https://github.com/ZardLi1115/readme-skill"><img src="https://img.shields.io/badge/GitHub-ZardLi1115%2Freadme--skill-181717?style=flat-square" alt="GitHub 仓库"></a>
   <a href="./LICENSE"><img src="https://img.shields.io/badge/License-MIT-22C55E?style=flat-square" alt="MIT 许可证"></a>
+  <a href="https://linux.do/"><img src="https://img.shields.io/badge/Community-Linux.do-7C3AED?style=flat-square" alt="Linux.do 社区"></a>
 </p>
 
 一个用于根据仓库证据和用户明确确认信息，生成准确、易读 GitHub README 的 Claude Code skill。

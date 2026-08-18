@@ -13,6 +13,7 @@
 <p align="center">
   <a href="https://github.com/ZardLi1115/readme-skill"><img src="https://img.shields.io/badge/GitHub-ZardLi1115%2Freadme--skill-181717?style=flat-square" alt="GitHub repository"></a>
   <a href="./LICENSE"><img src="https://img.shields.io/badge/License-MIT-22C55E?style=flat-square" alt="License: MIT"></a>
+  <a href="https://linux.do/"><img src="https://img.shields.io/badge/Community-Linux.do-7C3AED?style=flat-square" alt="Linux.do community"></a>
 </p>
 
 A Claude Code skill for creating accurate, readable GitHub README files from repository evidence and explicit user confirmation.
