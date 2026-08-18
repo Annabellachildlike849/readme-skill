@@ -7,6 +7,7 @@
 [English](./README.md) | [简体中文](./README.zh-CN.md)
 
 [![GitHub repository](https://img.shields.io/badge/GitHub-ZardLi1115%2Freadme--skill-181717?style=flat-square)](https://github.com/ZardLi1115/readme-skill)
+[![License: MIT](https://img.shields.io/badge/License-MIT-22C55E?style=flat-square)](./LICENSE)
 
 A Claude Code skill for creating accurate, readable GitHub README files from repository evidence and explicit user confirmation.
 
@@ -46,15 +47,17 @@ The skill scans only the files needed to support public claims, records the evid
 
 ## 💡 Usage Example
 
-A `README.md` already exists in the repository. How should it be handled? → Replace completely\
-Which language layout should the new README use? → English + Simplified Chinese\
-Should the README include Shields.io badges? → Include verified badges\
-Does the README need a project image or visual asset? → Generate a new image\
-Generating a new image requires specific service information. Which option do you choose? → Provide service information\
-Which README visual should be generated with `gpt-image-2`? → Icon + short line\
-Choose the text in the icon; image models may not render text accurately. → Project name + recommended short line\
-Should a Star History chart be included? → Do not include a chart\
-The README project visual was generated and its file validation completed: see the [Long Horizon Pi Extension README](https://github.com/ZardLi1115/long-horizon-pi-extension) for the result.
+The following is a summary of the process of generating a project README.
+
+> A `README.md` already exists in the repository. How should it be handled? → Replace completely\
+> Which language layout should the new README use? → English + Simplified Chinese\
+> Should the README include Shields.io badges? → Include verified badges\
+> Does the README need a project image or visual asset? → Generate a new image\
+> Generating a new image requires specific service information. Which option do you choose? → Provide service information\
+> Which README visual should be generated with `gpt-image-2`? → Icon + short line\
+> Choose the text in the icon; image models may not render text accurately. → Project name + recommended short line\
+> Should a Star History chart be included? → Do not include a chart\
+> The README project visual was generated and its file validation completed: see the [Long Horizon Pi Extension README](https://github.com/ZardLi1115/long-horizon-pi-extension) for the result.
 
 ## 🚀 Quick Start
 
