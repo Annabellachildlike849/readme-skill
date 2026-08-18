@@ -12,7 +12,7 @@ Determine:
 4. where it will appear in the README.
 5. whether the requested architecture view is a generated visual or a source-backed inline ASCII diagram.
 
-Prefer supplied prebuilt Unicode emoji/icon guidance first, then verified local assets, then user-provided assets, and generate a new visual only after approval. Verify local paths before referencing them, and never insert a speculative image URL. Product screenshots should show an actual UI or output.
+Prefer verified local assets first, then user-provided assets, and generate a new visual only after approval. Verify local paths before referencing them, and never insert a speculative image URL. Product screenshots should show an actual UI or output.
 
 Inline README architecture diagrams are not generated visuals: they must be source-backed ASCII Art in a fenced `text` block and must never use Mermaid. Follow the canonical standard in [`readme-structure.md`](./readme-structure.md#architecture-diagram). Use this guide only when the user wants an actual image asset such as an icon, banner, screenshot, generated architecture visual, or demo GIF.
 

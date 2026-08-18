@@ -14,11 +14,9 @@ Use this checklist before showing a final draft and again before any file write.
 - [ ] README URLs, local document links, image paths, package references, and community links exist or are user-confirmed.
 - [ ] API keys are represented only by environment variable names; no secret is embedded in text, code, URL, or asset.
 
-## Emoji, architecture, and usage examples
+## Architecture and usage examples
 
-- [ ] Unless the user explicitly declined emoji, every included `##` heading has one semantic emoji from the internal library and every Highlights/Feature row begins with one semantic emoji.
-- [ ] Emoji are unique within each README, total 20 or fewer, and absent from H1 titles, `###` headings, prose, badges, code blocks, image alt text, and ASCII diagrams.
-- [ ] No emoji is used as a badge; ordinary verified non-emoji badges remain optional.
+- [ ] No emoji appears anywhere in the README, including headings, table rows, prose, badges, code blocks, image alt text, and ASCII diagrams.
 - [ ] Architecture is included only when its components, boundaries, and relationships are verified or user-confirmed.
 - [ ] Architecture immediately follows Highlights, uses an aligned ASCII diagram inside a `text` code fence, and contains no Mermaid fence, syntax, or speculative flow.
 - [ ] A Usage Example immediately follows Architecture, or follows Highlights when Architecture is omitted.
@@ -44,7 +42,7 @@ Use this checklist before showing a final draft and again before any file write.
 - [ ] The README links to detailed docs rather than repeating a complete manual.
 - [ ] In bilingual mode, language-switch links are reciprocal and correct.
 - [ ] In bilingual mode, both files contain corresponding Quick Start sections and their technical identifiers match.
-- [ ] In bilingual mode, Architecture and Usage Example inclusion decisions, diagram topology, example code, expected behavior, images, commands, URLs, paths, versions, and license identifiers remain factually aligned. Natural prose and semantically equivalent emoji may differ.
+- [ ] In bilingual mode, Architecture and Usage Example inclusion decisions, diagram topology, example code, expected behavior, images, commands, URLs, paths, versions, and license identifiers remain factually aligned. Natural prose may differ.
 
 ## Existing README and write gate
 

@@ -21,8 +21,7 @@ Put this near the top of both files:
 - Rewrite the Chinese version naturally; do not translate sentence by sentence when that harms clarity.
 - Both files must use the same initial section order when the sections apply: Highlights → optional Architecture → optional Usage Example → Quick Install → Quick Start.
 - Make the same inclusion/omission decision for Architecture and Usage Example in both files.
-- Select semantically equivalent emoji from the built-in library. Each file may use different symbols when that reads naturally, but each file must keep symbols unique and within the 20-emoji limit.
-- Keep emoji placement and meaning aligned: one before each `##` heading and one at the start of each Highlights/Feature row; never in H1 titles, `###` headings, prose, badges, code, image alt text, or diagrams.
+- Do not use emoji in either language file.
 - Architecture diagrams must be the same source-backed topology with aligned technical labels and identifiers in fenced `text` blocks. Never use Mermaid in either language file.
 - Usage Examples must use the same confirmed or verified code, commands, URLs, paths, image assets, expected result, and technical identifiers. Natural prose may differ.
 - Keep commands, code blocks, environment variable names, URLs, paths, version numbers, badge destinations, Star History owner/repo identifiers, and license identifiers factually identical.

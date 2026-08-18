@@ -19,73 +19,9 @@ Create accurate, readable GitHub README files by grounding every external claim 
 - Prefer questions with multiple explicit options. Use a selectable list whenever the decision can be reasonably anticipated; offer a free-form “Other” choice only when the available options cannot cover the user’s intent.
 - Keep a clear separation between **Verified from repository**, **Confirmed by user**, **Uncertain**, and **Missing** information.
 - Do not copy another repository’s wording, project-specific commands, branding, or content. Use only general information architecture and writing principles.
-- By default, decorate generated README files with semantic emoji from the internal resource library below. Omit emoji only when the user explicitly asks not to use them.
-- When emoji are enabled in a generated README: put one semantic emoji before each included `##` heading and one at the start of each Highlights/Feature table row; do not use emoji in H1 titles, `###` headings, body paragraphs, badges, code blocks, image alt text, or ASCII architecture diagrams. Do not repeat an emoji in one document, and keep the total at 20 or fewer.
-- The emoji resource library is built-in Unicode guidance, not an external image asset or a claim that a repository contains icon files. Select symbols by meaning; do not force every category into a document.
+- Do not use emoji in generated README files. Keep visual guidance limited to verified image assets, badges, and source-backed ASCII diagrams.
 - Include an architecture diagram only when the repository evidence or the user confirms its components, boundaries, and relationships. Architecture diagrams are ASCII Art in a fenced `text` block—**never Mermaid**.
 - Include a usage example only when the user supplies or confirms the example’s prose, image/assets, code or commands, expected result, placement, and language. Do not turn an unverified idea into a public example.
-
-## Emoji Resource Library
-
-Generate README decorations by selecting the most appropriate symbols from these categories. This is not a forced mapping: adapt to the project’s actual content.
-
-### Chapter headings (`##` only)
-
-🚀 ✨ ⚡️ 🏗️ ⚙️ 📖 📈 🤝 📄 ⭐ 🔄 💡 🙏 🎯 🔥 🛠️ 🧩 📦 🌐 🔐 🎨
-
-### Highlights / Feature-list icons
-
-#### Performance and speed
-
-⚡ 🚀 🏎️ ⏱️ 📊 🔋
-
-#### Security and stability
-
-🔐 🛡️ 🔒 ✅ 💪 🧱
-
-#### Usability and experience
-
-🎨 🖥️ 📱 🌈 💅 🪄 🎭
-
-#### Extensibility and integrations
-
-🧩 🔌 🔗 🌐 📡 🛰️
-
-#### Intelligence and AI
-
-🤖 🧠 💬 🔍 📝 🎓
-
-#### Developer experience
-
-🛠️ 📦 🗂️ 🧪 🔧 📋 🖨️
-
-#### Data and analysis
-
-📊 📈 📉 🗃️ 💾 🔢
-
-#### Collaboration and community
-
-🤝 👥 🌍 💬 🗣️ 🏆
-
-#### Languages and internationalization
-
-🌐 🌍 🌏 🌎 🗺️
-
-#### Status and progress
-
-✅ ❌ ⏳ 🔄 🚧 💯 🎉
-
-#### General highlight accents
-
-🎯 💎 🌟 🔑 📌 🏅 🎁 🆕 🆓
-
-### Emoji rules
-
-- Use one emoji before each `##` heading and one emoji at the beginning of each Highlights/Feature row.
-- Do not use emoji before H1 titles, `###` headings, or body paragraphs.
-- Never put emoji on a badge line; badges already have visual weight.
-- Do not repeat an emoji in the same README, and do not exceed 20 total emoji in one README.
-- For bilingual READMEs, preserve the same semantic intent. Different language files may use different symbols, but commands, code, paths, URLs, versions, license identifiers, and architecture labels must remain factually aligned.
 
 ## ASCII Architecture Diagram Standard
 
@@ -186,30 +122,29 @@ Ask **one question at a time**. Present the decision as a list of explicit optio
 2. Ask for the language layout: English, English plus Simplified Chinese, or Chinese.
    - For bilingual output, `README.md` is the English primary GitHub landing page and `README.zh-CN.md` is the Chinese version.
    - For Chinese-only output, explain that GitHub displays root `README.md` by default and ask whether Chinese should be the primary page.
-3. Use semantic emoji by default. Ask only if the user asks to opt out or gives a visual preference; offer **use the default semantic palette**, **omit emoji**, or **Other**.
-4. Ask whether the user wants Shields.io badge recommendations.
+3. Ask whether the user wants Shields.io badge recommendations.
    - Offer explicit choices such as **include verified recommendations**, **omit badges**, or **Other**.
    - If the repository contains a verified `LICENSE*` file, recommend a linked static License badge by default as part of the verified badge set; let the user approve or remove it.
    - Recommend only badges whose claims and destinations are verifiable, then let the user approve, remove, or add items.
-5. Ask whether to include an ASCII architecture diagram.
+4. Ask whether to include an ASCII architecture diagram.
    - Offer **include a source-backed ASCII diagram**, **omit it**, or **Other**.
    - If included, confirm the components, group boundaries, relationships, and labels from repository evidence or the user before drawing it.
-6. Ask whether to include a usage example.
+5. Ask whether to include a usage example.
    - Offer **include a supplied example**, **omit it**, or **Other**.
    - If included, collect confirmed example prose, image/assets, code or commands, expected result, preferred placement, and language. Verify local image paths before referencing them and never expose credentials.
-7. Ask whether imagery is wanted.
+6. Ask whether imagery is wanted.
    - Offer **no image**, **use an existing asset**, or **generate a new image**.
    - If yes, ask whether existing assets are available.
    - If no assets are available, ask whether the visual should be icon only, icon plus one short line, or icon plus project name and one short line.
    - If the user chooses an OpenAI image service, ask for the API URL and API key (or the names of environment variables that already contain them) before generating anything. Do not guess an endpoint, model, response format, or output location.
    - Use [`scripts/generate-image.py`](./scripts/generate-image.py) for the generation request. Pass credentials through environment variables or process arguments only; never write them to the repository, README, prompt, image URL, or command committed to Git.
    - Verify the generated local asset before adding its path to a README. If generation fails, show the provider-neutral prompt and report the failure rather than inventing an image reference.
-8. Ask whether to add a Star History chart.
+7. Ask whether to add a Star History chart.
    - Offer **include it**, **omit it**, or **Other**.
    - Include it only after user confirmation **and** only when a public GitHub `owner/repo` identifier can be verified from the remote URL or supplied by the user.
    - Place it after **Community & support** and immediately before **License**.
    - State that it embeds a third-party dynamic SVG for a public GitHub repository; omit it if the repository is private, the owner/repo is uncertain, or the user declines.
-9. Ask only for remaining public information that cannot be verified: target audience, key emphasis, documentation site, demo, community, contribution route, FAQ, roadmap, citation, or security policy.
+8. Ask only for remaining public information that cannot be verified: target audience, key emphasis, documentation site, demo, community, contribution route, FAQ, roadmap, citation, or security policy.
 
 ### 4. Compose the draft
 
@@ -227,12 +162,11 @@ Before any file write, present:
 2. Complete Markdown draft(s) for each selected language file.
 3. The fact ledger and list of user-confirmed details.
 4. Proposed badges and each badge’s data source.
-5. Emoji choices and semantic rationale when emoji are enabled.
-6. The source-backed ASCII architecture diagram when requested.
-7. Usage-example content, provenance, and placement when requested.
-8. Image placement and generation recommendations, when requested.
-9. Star History placement and the verified `owner/repo`, when requested.
-10. If a README already exists, an explicit **keep / move / merge / remove** summary.
+5. The source-backed ASCII architecture diagram when requested.
+6. Usage-example content, provenance, and placement when requested.
+7. Image placement and generation recommendations, when requested.
+8. Star History placement and the verified `owner/repo`, when requested.
+9. If a README already exists, an explicit **keep / move / merge / remove** summary.
 
 ### 5. Write only after explicit confirmation
 

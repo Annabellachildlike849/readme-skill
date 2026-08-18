@@ -39,16 +39,9 @@ A one-sentence positioning statement says:
 
 Avoid unverified superlatives such as “best,” “fastest,” “production-ready,” or “industry-leading.” Prefer concrete language over slogans.
 
-### Semantic emoji
+### Headings
 
-Unless the user explicitly declines, use the built-in **Emoji Resource Library** in [`SKILL.md`](../SKILL.md) as semantic Unicode guidance. It is not an image-asset requirement.
-
-- Put one selected, unique emoji immediately before each included `##` heading.
-- Begin every Highlights/Feature row with one different semantic emoji.
-- Do not use emoji in H1 titles, `###` headings, body prose, badges, code blocks, image alt text, or ASCII diagrams.
-- Do not repeat an emoji in the same document; keep the total at 20 or fewer.
-- Select symbols that fit verified capability or section content. Do not force every palette category into a README.
-- In bilingual output, preserve semantic intent while keeping technical identifiers identical. The two language files may use different emoji.
+Write plain text headings. Do not use emoji in headings, table rows, prose, badges, code blocks, image alt text, or ASCII diagrams.
 
 ### Highlights table
 
@@ -57,7 +50,7 @@ Use a table only when it makes comparison easier. Keep it to 3–6 rows. Each ro
 ```markdown
 | Highlight | Why it matters |
 |---|---|
-| <selected emoji> <Verified capability> | <Reader benefit grounded in evidence> |
+| <Verified capability> | <Reader benefit grounded in evidence> |
 ```
 
 Do not make a long feature inventory masquerade as highlights.
