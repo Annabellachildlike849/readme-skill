@@ -10,8 +10,11 @@ Determine:
 2. whether approved assets already exist;
 3. whether the image should contain no text, an icon plus one short line, or an icon plus project name and one short line; and
 4. where it will appear in the README.
+5. whether the requested architecture view is a generated visual or a source-backed inline ASCII diagram.
 
-Prefer approved existing assets. Verify local paths before referencing them, and never insert a speculative image URL. Product screenshots should show an actual UI or output. Architecture diagrams require source-backed components and data flow.
+Prefer supplied prebuilt Unicode emoji/icon guidance first, then verified local assets, then user-provided assets, and generate a new visual only after approval. Verify local paths before referencing them, and never insert a speculative image URL. Product screenshots should show an actual UI or output.
+
+Inline README architecture diagrams are not generated visuals: they must be source-backed ASCII Art in a fenced `text` block and must never use Mermaid. Follow the canonical standard in [`readme-structure.md`](./readme-structure.md#architecture-diagram). Use this guide only when the user wants an actual image asset such as an icon, banner, screenshot, generated architecture visual, or demo GIF.
 
 Default recommendation: a concise icon plus no more than one or two short lines. Avoid dense, poster-like graphics, full feature lists, and UI mockups that claim nonexistent functionality.
 

@@ -1,6 +1,6 @@
 # README Structure and Writing Guide
 
-Use this guide before choosing README sections or writing prose. It defines a flexible reading flow, not a mandatory checklist, **except that every README must include a verified Quick Start section**. Delete other sections that are unsupported by repository facts or user confirmation. If no verified first-use path is available, ask the user for it rather than omitting Quick Start.
+Use this guide before choosing sections or composing prose. It defines a flexible reading flow, not a mandatory checklist, **except that every README must include a verified Quick Start section**. Delete unsupported optional sections. If no verified first-use path is available, ask the user for it rather than omitting Quick Start.
 
 ## Reading flow
 
@@ -12,10 +12,12 @@ optional visual
 → language links and verified badges
 → concise value proposition
 → 3–6 benefit-led highlights
+→ optional ASCII architecture diagram
+→ optional usage example
 → Quick Install
 → Quick Start
 → commands or API example
-→ configuration, integrations, or architecture when applicable
+→ configuration, integrations, or advanced architecture details
 → task-organized documentation links
 → contributing when supported
 → community when verified
@@ -37,6 +39,17 @@ A one-sentence positioning statement says:
 
 Avoid unverified superlatives such as “best,” “fastest,” “production-ready,” or “industry-leading.” Prefer concrete language over slogans.
 
+### Semantic emoji
+
+Unless the user explicitly declines, use the built-in **Emoji Resource Library** in [`SKILL.md`](../SKILL.md) as semantic Unicode guidance. It is not an image-asset requirement.
+
+- Put one selected, unique emoji immediately before each included `##` heading.
+- Begin every Highlights/Feature row with one different semantic emoji.
+- Do not use emoji in H1 titles, `###` headings, body prose, badges, code blocks, image alt text, or ASCII diagrams.
+- Do not repeat an emoji in the same document; keep the total at 20 or fewer.
+- Select symbols that fit verified capability or section content. Do not force every palette category into a README.
+- In bilingual output, preserve semantic intent while keeping technical identifiers identical. The two language files may use different emoji.
+
 ### Highlights table
 
 Use a table only when it makes comparison easier. Keep it to 3–6 rows. Each row leads with a user outcome and follows with a verified technical basis or relevant use case.
@@ -44,10 +57,34 @@ Use a table only when it makes comparison easier. Keep it to 3–6 rows. Each ro
 ```markdown
 | Highlight | Why it matters |
 |---|---|
-| <Verified capability> | <Reader benefit grounded in evidence> |
+| <selected emoji> <Verified capability> | <Reader benefit grounded in evidence> |
 ```
 
 Do not make a long feature inventory masquerade as highlights.
+
+### Architecture diagram
+
+An Architecture section is optional. Include it only when repository evidence or the user confirms its components, group boundaries, and relationships.
+
+- Place it immediately after Highlights and before an optional Usage Example.
+- Use only a fenced `text` block containing ASCII Art. **Never use Mermaid**, Mermaid fences, or Mermaid syntax.
+- Follow the canonical box, arrow, label, grouping, and alignment rules in [`SKILL.md`](../SKILL.md#ascii-architecture-diagram-standard).
+- Keep same-layer boxes equal in height, align box widths, prefer horizontal flow, and move to vertical layout only when hierarchy needs it.
+- Omit the entire section rather than drawing speculative components or flows.
+
+### Usage example
+
+A Usage Example section is optional. Place it immediately after Architecture; when Architecture is omitted, place it immediately after Highlights.
+
+Include only content supplied or confirmed by the user, or otherwise verified from the repository:
+
+- concise explanatory prose;
+- existing or generated local image assets with meaningful alt text;
+- real code or commands;
+- the expected result or validation outcome;
+- the requested placement and language layout.
+
+Do not turn a proposed workflow, screenshot, command, output, or benchmark result into a public example without evidence. Keep a broad Usage Example distinct from a project-specific API example: include both only when each helps a different reader task.
 
 ### Quick Install
 
@@ -55,7 +92,7 @@ Provide the lowest-friction **verified** installation route. Use a copyable comm
 
 ### Quick Start
 
-Show the shortest verified path from availability or installation to a useful result. This section is required in every generated README. Keep code/commands small, label fences correctly, and explain the expected result without inventing output. If the repository and user provide no verifiable first-use path, ask for that information before finalizing the draft; do not delete, leave empty, or replace the section with generic instructions. Link to the full guide rather than embedding every configuration option.
+Show the shortest verified path from availability or installation to a useful result. This section is required in every generated README. Keep code/commands small, label fences correctly, and explain expected behavior without inventing output. If the repository and user provide no verifiable first-use path, ask for that information before finalizing the draft; do not delete, leave empty, or replace the section with generic instructions.
 
 ### Commands, APIs, and deployment
 
@@ -77,7 +114,7 @@ Use a task-organized table, not a raw list of folders:
 ```markdown
 | Topic | What it covers | Link |
 |---|---|---|
-| <Reader task> | <Short, factual description> | [Open documentation](./docs/<verified-path>.md) |
+| <Reader task> | <Short factual description> | [Open documentation](./docs/<verified-path>.md) |
 ```
 
 Order items by the likely reader journey: start, use, configure, integrate, contribute, then reference. Link to detailed docs instead of attempting to duplicate a full manual.
@@ -111,7 +148,7 @@ Put a reciprocal language switch near the top of both files:
 [English](./README.md) | [简体中文](./README.zh-CN.md)
 ```
 
-The Chinese version is natural technical writing, not sentence-by-sentence translation. However, both language files must include corresponding verified Quick Start sections, and commands, code blocks, environment variable names, URLs, file paths, version numbers, and license identifiers must remain factually identical across language versions.
+The Chinese version is natural technical writing, not sentence-by-sentence translation. Both files must include corresponding verified Quick Start sections. Keep commands, code blocks, environment variable names, URLs, file paths, version numbers, license identifiers, architecture component labels, image paths, and usage-example identifiers factually identical across language versions. Keep the selected inclusion/omission decision and section order aligned for Architecture and Usage Example.
 
 ## GitHub-compatible layout
 

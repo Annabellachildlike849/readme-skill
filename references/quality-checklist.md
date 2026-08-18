@@ -14,6 +14,17 @@ Use this checklist before showing a final draft and again before any file write.
 - [ ] README URLs, local document links, image paths, package references, and community links exist or are user-confirmed.
 - [ ] API keys are represented only by environment variable names; no secret is embedded in text, code, URL, or asset.
 
+## Emoji, architecture, and usage examples
+
+- [ ] Unless the user explicitly declined emoji, every included `##` heading has one semantic emoji from the internal library and every Highlights/Feature row begins with one semantic emoji.
+- [ ] Emoji are unique within each README, total 20 or fewer, and absent from H1 titles, `###` headings, prose, badges, code blocks, image alt text, and ASCII diagrams.
+- [ ] No emoji is used as a badge; ordinary verified non-emoji badges remain optional.
+- [ ] Architecture is included only when its components, boundaries, and relationships are verified or user-confirmed.
+- [ ] Architecture immediately follows Highlights, uses an aligned ASCII diagram inside a `text` code fence, and contains no Mermaid fence, syntax, or speculative flow.
+- [ ] A Usage Example immediately follows Architecture, or follows Highlights when Architecture is omitted.
+- [ ] Each usage example contains only confirmed or verified prose, local/verified image paths, code or commands, and expected outcome; no secret appears in example material.
+- [ ] Example images have meaningful alt text and example code/commands are executable or explicitly identified as illustrative only when the user confirmed that scope.
+
 ## Badges and Star History
 
 - [ ] Every badge has a verified source and accurately represents it.
@@ -32,7 +43,7 @@ Use this checklist before showing a final draft and again before any file write.
 - [ ] The README links to detailed docs rather than repeating a complete manual.
 - [ ] In bilingual mode, language-switch links are reciprocal and correct.
 - [ ] In bilingual mode, both files contain corresponding Quick Start sections and their technical identifiers match.
-- [ ] Commands, URLs, paths, versions, and license identifiers match across `README.md` and `README.zh-CN.md`.
+- [ ] In bilingual mode, Architecture and Usage Example inclusion decisions, diagram topology, example code, expected behavior, images, commands, URLs, paths, versions, and license identifiers remain factually aligned. Natural prose and semantically equivalent emoji may differ.
 
 ## Existing README and write gate
 
@@ -40,7 +51,7 @@ When an existing README is present, before drafting ask the user to choose one h
 
 1. **Replace completely:** ignore all information in the existing README.
 2. **Replace with selected existing information:** create a new README while retaining only accurate content the user approves.
-3. **Extend existing README:** preserve accurate existing content and add or improve it in place.
+3. **Extend existing README:** preserve accurate existing content and add or improve content in place.
 
 Then produce an explicit list of content to **keep**, **move**, **merge**, and **remove**, with reasons tied to current repository facts.
 
@@ -66,6 +77,8 @@ If any checkbox fails, keep the output as an in-conversation draft and state wha
 | Existing README | Ask the user to choose replace completely, replace with selected existing information, or extend existing README before drafting. |
 | Absent license | Omit the license section and badge; invite the user to choose or add one. |
 | No verified Quick Start | Ask for the missing first-use path; do not finalize a README without a Quick Start section. |
+| No verified architecture | Omit the ASCII Architecture section rather than inferring components or flows. |
+| No confirmed usage example | Omit the Usage Example section rather than inventing prose, images, code, commands, or outcomes. |
 | No verified docs, community, or demo | Omit the corresponding section and badge instead of creating a placeholder. |
 | Code-versus-README contradiction | Show the conflict, treat code/configuration as the stronger source, and ask before making an external claim. |
 | Image unavailable or path unknown | Give placement guidance only; do not add an image reference. |
