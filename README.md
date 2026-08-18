@@ -47,7 +47,7 @@ The skill scans only the files needed to support public claims, records the evid
 
 ## 💡 Usage Example
 
-The following is a summary of the process of generating a project README.
+The following is a summary of the process of generating a project README. For the result, see the [Long Horizon Pi Extension README](https://github.com/ZardLi1115/long-horizon-pi-extension).
 
 > A `README.md` already exists in the repository. How should it be handled? → Replace completely\
 > Which language layout should the new README use? → English + Simplified Chinese\
@@ -57,7 +57,7 @@ The following is a summary of the process of generating a project README.
 > Which README visual should be generated with `gpt-image-2`? → Icon + short line\
 > Choose the text in the icon; image models may not render text accurately. → Project name + recommended short line\
 > Should a Star History chart be included? → Do not include a chart\
-> The README project visual was generated and its file validation completed: see the [Long Horizon Pi Extension README](https://github.com/ZardLi1115/long-horizon-pi-extension) for the result.
+> The README project visual was generated and its file validation completed.
 
 ## 🚀 Quick Start
 

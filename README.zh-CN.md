@@ -47,7 +47,7 @@ skill 只扫描支撑公开说明所需的文件，记录证据状态，询问�
 
 ## 💡 使用示例
 
-下面是生成一个项目 README 的过程摘要。
+下面是生成一个项目 README 的过程摘要。成果可参考 [Long Horizon Pi Extension 的 README](https://github.com/ZardLi1115/long-horizon-pi-extension)。
 
 > 仓库已存在 README.md。您希望如何处理它？ → 完全替换\
 > 新的 README 希望使用哪种语言布局？ → 英文 + 简体中文\
@@ -57,7 +57,7 @@ skill 只扫描支撑公开说明所需的文件，记录证据状态，询问�
 > 使用 `gpt-image-2` 生成哪种 README 视觉？ → 图标 + 短句\
 > 图标中的文字请选择一种；图片模型可能无法准确呈现文本。 → 项目名 + 推荐短句\
 > 是否要加入 Star History 图表？ → 不加入图表\
-> 已生成 README 项目视觉并完成文件校验：成果可参考 [Long Horizon Pi Extension 的 README](https://github.com/ZardLi1115/long-horizon-pi-extension)。
+> 已生成 README 项目视觉并完成文件校验。
 
 ## 🚀 快速开始
 
