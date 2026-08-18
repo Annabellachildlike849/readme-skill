@@ -111,3 +111,7 @@ Start with [`SKILL.md`](./SKILL.md) for the complete workflow. Supporting guidan
 ## 📄 License
 
 This project is licensed under the [MIT License](./LICENSE).
+
+## 🙏 Acknowledgments
+
+Thanks to the [Linux.do](https://linux.do) community.
