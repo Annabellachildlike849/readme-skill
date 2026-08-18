@@ -189,7 +189,8 @@ Ask **one question at a time**. Present the decision as a list of explicit optio
 3. Use semantic emoji by default. Ask only if the user asks to opt out or gives a visual preference; offer **use the default semantic palette**, **omit emoji**, or **Other**.
 4. Ask whether the user wants Shields.io badge recommendations.
    - Offer explicit choices such as **include verified recommendations**, **omit badges**, or **Other**.
-   - If yes, recommend only badges whose claims and destinations are verifiable, then let the user approve, remove, or add items.
+   - If the repository contains a verified `LICENSE*` file, recommend a linked static License badge by default as part of the verified badge set; let the user approve or remove it.
+   - Recommend only badges whose claims and destinations are verifiable, then let the user approve, remove, or add items.
 5. Ask whether to include an ASCII architecture diagram.
    - Offer **include a source-backed ASCII diagram**, **omit it**, or **Other**.
    - If included, confirm the components, group boundaries, relationships, and labels from repository evidence or the user before drawing it.

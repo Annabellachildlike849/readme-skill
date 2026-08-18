@@ -20,7 +20,7 @@ Recommend a badge only if both its claim and destination/source are known:
 
 Never fabricate build state, test state, version, download count, compatibility, maintainer status, demo URL, or community link. When the appropriate dynamic endpoint is not verified, omit the badge rather than guessing.
 
-Aim for 3–7 top badges. Add more only when each solves a distinct reader decision and the header remains readable.
+Aim for 3–7 top badges. Add more only when each solves a distinct reader decision and the header remains readable. When an actual `LICENSE*` file is verified and the user has requested badge recommendations, include a linked static License badge in the default recommendation set unless the user declines it.
 
 ## Visual system
 

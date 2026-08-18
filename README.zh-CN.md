@@ -46,22 +46,15 @@ skill 只扫描支撑公开说明所需的文件，记录证据状态，询问�
 
 ## 💡 使用示例
 
-`readme-skill` 曾用于为 [Long Horizon Pi Extension](https://github.com/ZardLi1115/long-horizon-pi-extension) 编写文档；该项目是一个面向可恢复、按章节执行工作流的 Pi Coding Agent 扩展。
-
-用户提供仓库 URL，并请求生成专业 README。发现已有 README 后，用户选择完全重写，并确认以英文 `README.md` 为主、提供简体中文版本、加入已验证徽章和新生成的本地项目视觉；用户未选择 Star History 图表。
-
-最终生成了 `README.md`、`README.zh-CN.md`，并验证了本地资源 `assets/long-horizon-pi-extension-icon.png`。过程还发现该仓库的 Pi 运行时包声明在 `devDependencies` 中；Pi 从 Git 安装包时只安装生产依赖，因此 README 不会声称支持直接包安装，而是记录了有证据支持的本地检出路径：
-
-```bash
-git clone https://github.com/ZardLi1115/long-horizon-pi-extension.git
-cd long-horizon-pi-extension
-npm install
-
-cd /absolute/path/to/your-git-project
-pi --extension /absolute/path/to/long-horizon-pi-extension/index.ts
-```
-
-目标仓库的 `npm test` 通过了 126 个测试，`npm run typecheck` 通过；发布前还检查了 README 链接、图片路径、许可证路径和快速开始。这些验证结果属于 Long Horizon 示例仓库，而不是 `readme-skill` 自身运行的测试。
+仓库已存在 README.md。您希望如何处理它？ → 完全替换\
+新的 README 希望使用哪种语言布局？ → 英文 + 简体中文\
+是否要在 README 中加入 Shields.io 徽章？ → 包含已验证徽章\
+README 是否需要项目图片或视觉资源？ → 生成新图片\
+生成新图片需要明确的服务信息。您选择哪种方式？ → 提供服务信息\
+使用 `gpt-image-2` 生成哪种 README 视觉？ → 图标 + 短句\
+图标中的文字请选择一种；图片模型可能无法准确呈现文本。 → 项目名 + 推荐短句\
+是否要加入 Star History 图表？ → 不加入图表\
+已生成 README 项目视觉并完成文件校验：成果可参考 [Long Horizon Pi Extension 的 README](https://github.com/ZardLi1115/long-horizon-pi-extension)。
 
 ## 🚀 快速开始
 

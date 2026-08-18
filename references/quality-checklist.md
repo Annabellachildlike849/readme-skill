@@ -28,6 +28,7 @@ Use this checklist before showing a final draft and again before any file write.
 ## Badges and Star History
 
 - [ ] Every badge has a verified source and accurately represents it.
+- [ ] When a verified `LICENSE*` file exists and the user requested badge recommendations, the default badge proposal includes a linked static License badge unless the user declined it.
 - [ ] Static badge labels are percent-encoded and palette choices match the badge guide.
 - [ ] Dynamic badges use a verified endpoint; no endpoint was guessed.
 - [ ] Star History is included only after user approval and verification of a public GitHub `owner/repo`.

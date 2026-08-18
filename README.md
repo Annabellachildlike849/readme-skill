@@ -46,22 +46,15 @@ The skill scans only the files needed to support public claims, records the evid
 
 ## 💡 Usage Example
 
-`readme-skill` was used to document [Long Horizon Pi Extension](https://github.com/ZardLi1115/long-horizon-pi-extension), a Pi Coding Agent extension for recoverable, section-based workflows.
-
-The request supplied the repository URL and asked for a professional README. During discovery, the existing README was found, and the user chose a complete rewrite with an English primary README, a Simplified Chinese counterpart, verified badges, and a generated local project visual. The user declined a Star History chart.
-
-The resulting documentation included `README.md`, `README.zh-CN.md`, and the verified local asset `assets/long-horizon-pi-extension-icon.png`. The process also found that the repository’s Pi runtime packages were declared in `devDependencies`; because Pi Git package installation uses production dependencies, the README documents the evidence-backed local checkout path instead of claiming that direct package installation is supported:
-
-```bash
-git clone https://github.com/ZardLi1115/long-horizon-pi-extension.git
-cd long-horizon-pi-extension
-npm install
-
-cd /absolute/path/to/your-git-project
-pi --extension /absolute/path/to/long-horizon-pi-extension/index.ts
-```
-
-The target repository’s `npm test` run passed 126 tests, `npm run typecheck` passed, and the README links, image path, license path, and Quick Start were checked before publication. Those validation results belong to the Long Horizon example repository, not to `readme-skill` itself.
+A `README.md` already exists in the repository. How should it be handled? → Replace completely\
+Which language layout should the new README use? → English + Simplified Chinese\
+Should the README include Shields.io badges? → Include verified badges\
+Does the README need a project image or visual asset? → Generate a new image\
+Generating a new image requires specific service information. Which option do you choose? → Provide service information\
+Which README visual should be generated with `gpt-image-2`? → Icon + short line\
+Choose the text in the icon; image models may not render text accurately. → Project name + recommended short line\
+Should a Star History chart be included? → Do not include a chart\
+The README project visual was generated and its file validation completed: see the [Long Horizon Pi Extension README](https://github.com/ZardLi1115/long-horizon-pi-extension) for the result.
 
 ## 🚀 Quick Start
 
