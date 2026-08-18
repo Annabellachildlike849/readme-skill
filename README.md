@@ -115,6 +115,10 @@ When a user chooses an OpenAI image service, the skill requests the API URL and 
 
 Start with [`SKILL.md`](./SKILL.md) for the complete workflow. Supporting guidance and templates are available in the [`references/`](./references/) and [`templates/`](./templates/) directories.
 
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=ZardLi1115%2Freadme-skill&type=Date)](https://star-history.com/#ZardLi1115/readme-skill&Date)
+
 ## License
 
 This project is licensed under the [MIT License](./LICENSE).

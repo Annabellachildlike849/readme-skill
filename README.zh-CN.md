@@ -115,6 +115,10 @@ skill 只扫描支撑公开说明所需的文件，记录证据状态，询问�
 
 完整的工作流程和规则请从 [`SKILL.md`](./SKILL.md) 开始阅读。补充指南和模板位于 [`references/`](./references/) 与 [`templates/`](./templates/) 目录中。
 
+## Star 历史
+
+[![Star History Chart](https://api.star-history.com/svg?repos=ZardLi1115%2Freadme-skill&type=Date)](https://star-history.com/#ZardLi1115/readme-skill&Date)
+
 ## 许可证
 
 本项目基于 [MIT 许可证](./LICENSE) 发布。
